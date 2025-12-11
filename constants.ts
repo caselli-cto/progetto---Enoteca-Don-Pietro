@@ -9,7 +9,7 @@ export const WINES: Wine[] = [
     type: "Rosso",
     price: 85,
     description: "Un'icona delle Langhe. Strutturato, tannini eleganti, note di rosa appassita e catrame.",
-    image: "https://images.unsplash.com/photo-1559563362-c667ba5f5480?q=80&w=800&auto=format&fit=crop" // Red wine bottle dark mood
+    image: "https://images.unsplash.com/photo-1584916201218-f4242ceb4809?q=80&w=800&auto=format&fit=crop" // Dark red wine bottle
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ export const WINES: Wine[] = [
     type: "Bianco",
     price: 45,
     description: "Minerale, salino, con sentori di ginestra e mela cotogna. Vulcanico.",
-    image: "https://images.unsplash.com/photo-1585553616435-2dc0a54e271d?q=80&w=800&auto=format&fit=crop" // White wine bottle
+    image: "https://images.unsplash.com/photo-1585553616435-2dc0a54e271d?q=80&w=800&auto=format&fit=crop" // Elegant white wine bottle
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ export const WINES: Wine[] = [
     type: "Spumante",
     price: 60,
     description: "Perlage finissimo, cremoso, note di pasticceria e agrumi canditi.",
-    image: "https://images.unsplash.com/photo-1594142404563-6409e1bf3664?q=80&w=800&auto=format&fit=crop" // Sparkling
+    image: "https://images.unsplash.com/photo-1606758671604-037746535548?q=80&w=800&auto=format&fit=crop" // Champagne/Sparkling style
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ export const WINES: Wine[] = [
     type: "Naturale",
     price: 95,
     description: "Orange wine complesso, macerato in anfora georgiana. Albicocca secca ed erbe.",
-    image: "https://images.unsplash.com/photo-1566914565749-9f796c9f6580?q=80&w=800&auto=format&fit=crop" // Orange/Natural look
+    image: "https://images.unsplash.com/photo-1566914565749-9f796c9f6580?q=80&w=800&auto=format&fit=crop" // Amber/Orange wine
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ export const WINES: Wine[] = [
     type: "Rosso",
     price: 55,
     description: "Eleganza pura. Ciliegia scura, tabacco e spezie dolci.",
-    image: "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=800&auto=format&fit=crop" // Red wine classy
+    image: "https://images.unsplash.com/photo-1559563362-c667ba5f5480?q=80&w=800&auto=format&fit=crop" // Classic Red
   },
   {
     id: 6,
