@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enoteca Don Pietro - Vini</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#2C1810',
+              secondary: '#D4AF37',
+              accent: '#722F37',
+              offWhite: '#F9F8F6',
+            },
+            fontFamily: {
+              playfair: ['"Playfair Display"', 'serif'],
+              poppins: ['"Poppins"', 'sans-serif'],
+              crimson: ['"Crimson Text"', 'serif'],
+            }
+          },
+        },
+      }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-offWhite text-gray-800">
+
+    <!-- Navbar Duplicated for simplicity in static site -->
+    <nav class="bg-primary text-white sticky top-0 z-50 shadow-lg border-b border-secondary/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="font-playfair text-2xl tracking-wider text-secondary hover:text-white transition-colors">Enoteca Don Pietro</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-gray-300 hover:text-secondary px-3 py-2 rounded-md text-sm font-medium font-poppins">Home</a>
+                        <a href="about.html" class="text-gray-300 hover:text-secondary px-3 py-2 rounded-md text-sm font-medium font-poppins">Chi Siamo</a>
+                        <a href="wines.html" class="text-secondary px-3 py-2 rounded-md text-sm font-medium font-poppins">Vini</a>
+                        <a href="menu.html" class="text-gray-300 hover:text-secondary px-3 py-2 rounded-md text-sm font-medium font-poppins">Menu</a>
+                        <a href="contact.html" class="bg-accent hover:bg-red-900 text-white px-5 py-2 rounded font-poppins text-sm font-bold">Prenota</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-400 hover:text-white p-2"><i data-lucide="menu"></i></button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-primary border-t border-white/10">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 text-gray-300">Home</a>
+                <a href="wines.html" class="block px-3 py-2 text-secondary font-bold">Vini</a>
+                <a href="menu.html" class="block px-3 py-2 text-gray-300">Menu</a>
+                <a href="contact.html" class="block px-3 py-2 text-accent">Prenota</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="bg-primary py-16 text-center text-white">
+        <h1 class="font-playfair text-4xl md:text-5xl mb-4">La Nostra Cantina</h1>
+        <p class="font-crimson italic text-xl text-gray-300">"Una selezione in continua evoluzione"</p>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col lg:flex-row gap-8">
+        <!-- Sidebar Filtri -->
+        <div class="lg:w-1/4">
+            <div class="bg-white p-6 rounded-sm shadow-sm sticky top-24">
+                <div class="flex items-center gap-2 mb-6 text-primary border-b pb-2">
+                    <i data-lucide="filter" class="w-5 h-5"></i>
+                    <h3 class="font-playfair text-xl">Filtra</h3>
+                </div>
+                <div class="mb-6">
+                    <h4 class="font-poppins font-bold text-xs uppercase text-gray-400 mb-3">Tipologia</h4>
+                    <div id="type-filters" class="space-y-1">
+                        <!-- JS injects buttons here -->
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-poppins font-bold text-xs uppercase text-gray-400 mb-3">Regione</h4>
+                    <div id="region-filters" class="space-y-1">
+                         <!-- JS injects buttons here -->
+                    </div>
+                </div>
+                <button id="reset-filters" class="mt-6 text-xs font-poppins text-accent underline w-full text-left">Resetta tutto</button>
+            </div>
+        </div>
+
+        <!-- Griglia Vini -->
+        <div class="lg:w-3/4">
+            <div id="wine-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Javascript will populate this -->
+            </div>
+            <div id="no-results" class="hidden text-center py-12">
+                <p class="font-playfair text-2xl text-gray-400">Nessun vino trovato.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer included via common style usually, simpler here just duplicate -->
+    <footer class="bg-[#1A1A1A] text-white py-8 border-t-4 border-accent text-center text-sm">
+        <p>&copy; 2024 Enoteca Don Pietro</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Init page specific
+        document.addEventListener('DOMContentLoaded', () => {
+            renderWines();
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
