@@ -4,11 +4,13 @@ FROM node:20-alpine AS build
 # Imposta la directory di lavoro
 WORKDIR /app
 
-# Copia i file di dipendenze
+# Copia i file di configurazione delle dipendenze
+# Il '*' permette di copiare il lock file se esiste, altrimenti copia solo package.json
 COPY package.json package-lock.json* ./
 
-# Installa le dipendenze
-RUN npm ci
+# Esegue l'installazione. 
+# Usiamo 'npm install' invece di 'npm ci' perché 'npm ci' fallisce se manca il lock file.
+RUN npm install
 
 # Copia tutto il codice sorgente
 COPY . .
@@ -19,7 +21,7 @@ RUN npm run build
 # STEP 2: Server Nginx per servire i file statici
 FROM nginx:alpine
 
-# Copia la configurazione custom di Nginx (che creeremo al punto 2)
+# Copia la configurazione custom di Nginx
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Copia i file compilati dallo step precedente alla cartella di Nginx
