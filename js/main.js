@@ -18,7 +18,7 @@ var WINES = [
         type: "Naturale",
         price: 45,
         description: "Macerato sulle bucce, non filtrato. Un'espressione arcaica e potente del Grillo.",
-        image: "https://images.unsplash.com/photo-1572569992823-3758b9f7a554?auto=format&fit=crop&q=80&w=800"
+        image: "https://images.unsplash.com/photo-1474722883778-792e7992b306?auto=format&fit=crop&q=80&w=800"
     },
     {
         id: 3,
@@ -58,7 +58,7 @@ var WINES = [
         type: "Rosso",
         price: 65,
         description: "Un classico intramontabile per le grandi occasioni. Potente e longevo.",
-        image: "https://images.unsplash.com/photo-1559563362-c667ba5f5480?auto=format&fit=crop&q=80&w=800"
+        image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=800"
     },
     {
         id: 7,
@@ -78,7 +78,7 @@ var WINES = [
         type: "Naturale",
         price: 95,
         description: "Un'icona del vino naturale. Fermentato in anfore georgiane interrate.",
-        image: "https://images.unsplash.com/photo-1572569992823-3758b9f7a554?auto=format&fit=crop&q=80&w=800"
+        image: "https://images.unsplash.com/photo-1566914565749-9f796c9f6580?auto=format&fit=crop&q=80&w=800"
     },
     {
         id: 9,
