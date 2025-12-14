@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* @tailwind base; - Handled by CDN */
+/* @tailwind components; - Handled by CDN */
+/* @tailwind utilities; - Handled by CDN */
 
 /* Custom Animations */
 @keyframes fadeIn {
