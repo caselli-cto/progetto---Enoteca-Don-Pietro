@@ -8,7 +8,7 @@ var WINES = [
         type: "Rosso",
         price: 38,
         description: "Nerello Mascalese in purezza. Elegante, minerale, figlio del vulcano.",
-        image: "https://images.unsplash.com/photo-1559563362-c667ba5f5480?q=80&w=800&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1559563362-c667ba5f5480?auto=format&fit=crop&q=80&w=800"
     },
     {
         id: 2,
@@ -18,7 +18,7 @@ var WINES = [
         type: "Naturale",
         price: 45,
         description: "Macerato sulle bucce, non filtrato. Un'espressione arcaica e potente del Grillo.",
-        image: "https://images.unsplash.com/photo-1566914565749-9f796c9f6580?q=80&w=800&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1572569992823-3758b9f7a554?auto=format&fit=crop&q=80&w=800"
     },
     {
         id: 3,
@@ -28,7 +28,7 @@ var WINES = [
         type: "Spumante",
         price: 42,
         description: "Partner storico. Metodo Classico da Bombino Bianco. Bollicina cremosa e strutturata.",
-        image: "https://images.unsplash.com/photo-1606758671604-037746535548?q=80&w=800&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1598155523122-38423ae4d6c6?auto=format&fit=crop&q=80&w=800"
     },
     {
         id: 4,
@@ -38,7 +38,7 @@ var WINES = [
         type: "Rosso",
         price: 35,
         description: "Biologico, affinato in anfora. Note di ciliegia, terra rossa e spezie mediterranee.",
-        image: "https://images.unsplash.com/photo-1584916201218-f4242ceb4809?q=80&w=800&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&q=80&w=800"
     },
     {
         id: 5,
@@ -48,7 +48,7 @@ var WINES = [
         type: "Bianco",
         price: 32,
         description: "Artigianale, salino, di grande carattere. Un bianco che sa di mare e sole.",
-        image: "https://images.unsplash.com/photo-1585553616435-2dc0a54e271d?q=80&w=800&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1585553616435-2dc0a54e271d?auto=format&fit=crop&q=80&w=800"
     },
     {
         id: 6,
@@ -58,7 +58,7 @@ var WINES = [
         type: "Rosso",
         price: 65,
         description: "Un classico intramontabile per le grandi occasioni. Potente e longevo.",
-        image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=800&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1559563362-c667ba5f5480?auto=format&fit=crop&q=80&w=800"
     },
     {
         id: 7,
@@ -68,7 +68,7 @@ var WINES = [
         type: "Rosso",
         price: 48,
         description: "L'eleganza del Sangiovese nel cuore del Chianti. Note di viola e frutti rossi.",
-        image: "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=800&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&q=80&w=800"
     },
     {
         id: 8,
@@ -78,7 +78,7 @@ var WINES = [
         type: "Naturale",
         price: 95,
         description: "Un'icona del vino naturale. Fermentato in anfore georgiane interrate.",
-        image: "https://images.unsplash.com/photo-1572569992823-3758b9f7a554?q=80&w=800&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1572569992823-3758b9f7a554?auto=format&fit=crop&q=80&w=800"
     },
     {
         id: 9,
@@ -88,7 +88,7 @@ var WINES = [
         type: "Spumante",
         price: 28,
         description: "Il vero Prosecco della tradizione contadina, rifermentato in bottiglia. Secco e beverino.",
-        image: "https://images.unsplash.com/photo-1598155523122-38423ae4d6c6?q=80&w=800&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1594142404563-64dd22d05f33?auto=format&fit=crop&q=80&w=800"
     }
 ];
 
@@ -109,19 +109,19 @@ var EVENTS = [
         title: "Letture in Cantina",
         date: "Ogni Giovedì",
         desc: "Serate di reading letterario curate da Paolo Sus e ospiti. Un calice, una voce, una storia.",
-        image: "https://images.unsplash.com/photo-1478720568477-152d9b164e63?q=80&w=800&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1478720568477-152d9b164e63?auto=format&fit=crop&q=80&w=800"
     },
     {
         title: "Vinyl & Wine",
         date: "Venerdì e Sabato",
         desc: "Selezione musicale rigorosamente su vinile. Jazz, Soul e cantautorato italiano per accompagnare la degustazione.",
-        image: "https://images.unsplash.com/photo-1484876065684-262a47918cd7?q=80&w=800&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1535905557558-afc4877a26fc?auto=format&fit=crop&q=80&w=800"
     },
     {
         title: "Incontro col Produttore: d'Araprì",
         date: "25 Ottobre - 19:00",
         desc: "Degustazione guidata delle Grandi Bollicine del Sud con i produttori.",
-        image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=800&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=800"
     }
 ];
 
