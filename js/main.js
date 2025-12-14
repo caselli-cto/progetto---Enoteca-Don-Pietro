@@ -205,19 +205,39 @@ function initFilters() {
     types.forEach(function(t) { createButton(t, 'type', filtersTypeContainer); });
     regions.forEach(function(r) { createButton(r, 'region', filtersRegionContainer); });
 
-    // Bottone Reset
-    var resetBtn = document.getElementById('reset-filters');
-    if(resetBtn) {
-        resetBtn.onclick = function() {
+    // Bottone Reset Totale
+    var resetAllBtn = document.getElementById('reset-filters');
+    if(resetAllBtn) {
+        resetAllBtn.onclick = function() {
             currentFilters.type = null;
             currentFilters.region = null;
             updateFilterUI();
             renderWines();
         };
     }
+
+    // Bottone Reset Tipologia
+    var resetTypeBtn = document.getElementById('reset-type');
+    if(resetTypeBtn) {
+        resetTypeBtn.onclick = function() {
+            currentFilters.type = null;
+            updateFilterUI();
+            renderWines();
+        }
+    }
+
+    // Bottone Reset Regione
+    var resetRegionBtn = document.getElementById('reset-region');
+    if(resetRegionBtn) {
+        resetRegionBtn.onclick = function() {
+            currentFilters.region = null;
+            updateFilterUI();
+            renderWines();
+        }
+    }
 }
 
-// Aggiorna l'aspetto dei bottoni (Grassetto/Colore)
+// Aggiorna l'aspetto dei bottoni (Grassetto/Colore) e Visibilità Reset
 function updateFilterUI() {
     var buttons = document.querySelectorAll('.filter-btn');
     buttons.forEach(function(btn) {
@@ -233,6 +253,20 @@ function updateFilterUI() {
             btn.classList.add('font-bold', 'text-accent', 'pl-2', 'border-l-2', 'border-accent');
         }
     });
+
+    // Gestione visibilità pulsanti "Cancella" singoli
+    var resetTypeBtn = document.getElementById('reset-type');
+    var resetRegionBtn = document.getElementById('reset-region');
+
+    if(resetTypeBtn) {
+        if(currentFilters.type) resetTypeBtn.classList.remove('hidden');
+        else resetTypeBtn.classList.add('hidden');
+    }
+
+    if(resetRegionBtn) {
+        if(currentFilters.region) resetRegionBtn.classList.remove('hidden');
+        else resetRegionBtn.classList.add('hidden');
+    }
 }
 
 // Renderizza la griglia vini

@@ -77,19 +77,30 @@
                     <i data-lucide="filter" class="w-5 h-5"></i>
                     <h3 class="font-playfair text-xl">Filtra</h3>
                 </div>
+                
+                <!-- Filtro Tipologia -->
                 <div class="mb-6">
-                    <h4 class="font-poppins font-bold text-xs uppercase text-gray-400 mb-3">Tipologia</h4>
+                    <div class="flex justify-between items-center mb-3">
+                        <h4 class="font-poppins font-bold text-xs uppercase text-gray-400">Tipologia</h4>
+                        <button id="reset-type" class="text-[10px] text-accent font-bold uppercase hover:underline hidden">Cancella</button>
+                    </div>
                     <div id="type-filters" class="space-y-1">
                         <!-- JS injects buttons here -->
                     </div>
                 </div>
+
+                <!-- Filtro Regione -->
                 <div>
-                    <h4 class="font-poppins font-bold text-xs uppercase text-gray-400 mb-3">Regione</h4>
+                    <div class="flex justify-between items-center mb-3">
+                        <h4 class="font-poppins font-bold text-xs uppercase text-gray-400">Regione</h4>
+                        <button id="reset-region" class="text-[10px] text-accent font-bold uppercase hover:underline hidden">Cancella</button>
+                    </div>
                     <div id="region-filters" class="space-y-1">
                          <!-- JS injects buttons here -->
                     </div>
                 </div>
-                <button id="reset-filters" class="mt-6 text-xs font-poppins text-accent underline w-full text-left">Resetta tutto</button>
+
+                <button id="reset-filters" class="mt-8 pt-4 border-t border-gray-100 text-xs font-poppins text-gray-400 hover:text-accent underline w-full text-center">Resetta tutti i filtri</button>
             </div>
         </div>
 
@@ -122,6 +133,5 @@
     </footer>
 
     <script src="js/main.js"></script>
-    <!-- Rimosso blocco script inline per usare DOMContentLoaded in main.js -->
 </body>
 </html>
