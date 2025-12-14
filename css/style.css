@@ -21,3 +21,23 @@
 .lucide {
     vertical-align: middle;
 }
+
+/* Custom Gradients & Textures */
+.bg-vinyl {
+    background: radial-gradient(circle at center, #2C1810 0%, #1a0f0a 100%);
+}
+
+.text-gold-shimmer {
+    background: linear-gradient(45deg, #D4AF37, #F9E076, #D4AF37);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 200% auto;
+    animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}

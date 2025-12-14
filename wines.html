@@ -32,7 +32,6 @@
 </head>
 <body class="bg-offWhite text-gray-800">
 
-    <!-- Navbar Duplicated for simplicity in static site -->
     <nav class="bg-primary text-white sticky top-0 z-50 shadow-lg border-b border-secondary/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
@@ -45,6 +44,7 @@
                         <a href="about.html" class="text-gray-300 hover:text-secondary px-3 py-2 rounded-md text-sm font-medium font-poppins">Chi Siamo</a>
                         <a href="wines.html" class="text-secondary px-3 py-2 rounded-md text-sm font-medium font-poppins">Vini</a>
                         <a href="menu.html" class="text-gray-300 hover:text-secondary px-3 py-2 rounded-md text-sm font-medium font-poppins">Menu</a>
+                        <a href="events.html" class="text-gray-300 hover:text-secondary px-3 py-2 rounded-md text-sm font-medium font-poppins">Eventi</a>
                         <a href="contact.html" class="bg-accent hover:bg-red-900 text-white px-5 py-2 rounded font-poppins text-sm font-bold">Prenota</a>
                     </div>
                 </div>
@@ -57,7 +57,7 @@
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="index.html" class="block px-3 py-2 text-gray-300">Home</a>
                 <a href="wines.html" class="block px-3 py-2 text-secondary font-bold">Vini</a>
-                <a href="menu.html" class="block px-3 py-2 text-gray-300">Menu</a>
+                <a href="events.html" class="block px-3 py-2 text-gray-300">Eventi</a>
                 <a href="contact.html" class="block px-3 py-2 text-accent">Prenota</a>
             </div>
         </div>
@@ -65,8 +65,8 @@
 
     <!-- Header -->
     <div class="bg-primary py-16 text-center text-white">
-        <h1 class="font-playfair text-4xl md:text-5xl mb-4">La Nostra Cantina</h1>
-        <p class="font-crimson italic text-xl text-gray-300">"Una selezione in continua evoluzione"</p>
+        <h1 class="font-playfair text-4xl md:text-5xl mb-4">La Cantina</h1>
+        <p class="font-crimson italic text-xl text-gray-300">"Selezione artigianale con cuore siciliano"</p>
     </div>
 
     <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col lg:flex-row gap-8">
@@ -103,15 +103,26 @@
             </div>
         </div>
     </div>
+    
+    <!-- Partners Section -->
+    <div class="bg-white py-16 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h3 class="font-playfair text-3xl text-primary mb-8">I Nostri Partner</h3>
+            <div class="flex justify-center items-center gap-12 flex-wrap opacity-70">
+                <!-- Logos simulation with text for now -->
+                <span class="font-playfair text-2xl text-gray-400 font-bold uppercase">d'Araprì</span>
+                <span class="font-playfair text-2xl text-gray-400 font-bold uppercase">Girolamo Russo</span>
+                <span class="font-playfair text-2xl text-gray-400 font-bold uppercase">Arianna Occhipinti</span>
+            </div>
+        </div>
+    </div>
 
-    <!-- Footer included via common style usually, simpler here just duplicate -->
     <footer class="bg-[#1A1A1A] text-white py-8 border-t-4 border-accent text-center text-sm">
         <p>&copy; 2024 Enoteca Don Pietro</p>
     </footer>
 
     <script src="js/main.js"></script>
     <script>
-        // Init page specific
         document.addEventListener('DOMContentLoaded', () => {
             renderWines();
             lucide.createIcons();

@@ -41,6 +41,7 @@
                         <a href="about.html" class="text-secondary px-3 py-2 rounded-md text-sm font-medium font-poppins">Chi Siamo</a>
                         <a href="wines.html" class="text-gray-300 hover:text-secondary px-3 py-2 rounded-md text-sm font-medium font-poppins">Vini</a>
                         <a href="menu.html" class="text-gray-300 hover:text-secondary px-3 py-2 rounded-md text-sm font-medium font-poppins">Menu</a>
+                        <a href="events.html" class="text-gray-300 hover:text-secondary px-3 py-2 rounded-md text-sm font-medium font-poppins">Eventi</a>
                         <a href="contact.html" class="bg-accent hover:bg-red-900 text-white px-5 py-2 rounded font-poppins text-sm font-bold">Prenota</a>
                     </div>
                 </div>
@@ -53,28 +54,43 @@
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="index.html" class="block px-3 py-2 text-gray-300">Home</a>
                 <a href="about.html" class="block px-3 py-2 text-secondary font-bold">Chi Siamo</a>
+                <a href="events.html" class="block px-3 py-2 text-gray-300">Eventi</a>
                 <a href="contact.html" class="block px-3 py-2 text-accent">Prenota</a>
             </div>
         </div>
     </nav>
 
     <div class="max-w-7xl mx-auto px-4 py-20">
-        <div class="flex flex-col md:flex-row items-center gap-12">
-            <div class="md:w-1/2">
-                <img src="https://picsum.photos/id/447/600/500" alt="Interno enoteca" class="rounded-sm shadow-2xl">
+        <div class="flex flex-col md:flex-row items-center gap-16">
+            <div class="md:w-1/2 relative">
+                <div class="absolute -top-4 -left-4 w-full h-full border-2 border-secondary rounded-sm"></div>
+                <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?q=80&w=800" alt="Interno enoteca" class="relative z-10 rounded-sm shadow-2xl sepia-[.2]">
             </div>
             <div class="md:w-1/2 space-y-6">
-                <h1 class="font-playfair text-4xl text-primary">La Nostra Storia</h1>
+                <span class="text-accent font-bold uppercase tracking-widest text-xs font-poppins">Dal 2010 a Milano</span>
+                <h1 class="font-playfair text-5xl text-primary">La Bottega di Pietro</h1>
                 <div class="w-16 h-1 bg-secondary"></div>
-                <p class="font-poppins text-gray-600 leading-relaxed">
-                    Enoteca Don Pietro nasce nel 2010 come realizzazione di una passione: creare uno spazio dove il vino non è solo una bevanda, ma un momento di connessione.
+                <p class="font-poppins text-gray-600 leading-relaxed text-lg">
+                    Inaugurata nel 2010 da <strong>Pietro Angelo Giuffrida</strong>, l'Enoteca Don Pietro non è solo un locale, è un'estensione del salotto di casa.
                 </p>
                 <p class="font-poppins text-gray-600 leading-relaxed">
-                    Situati nel cuore del quartiere Navigli, abbiamo costruito una comunità di appassionati che condividono la ricerca di qualità e autenticità. Collaboriamo direttamente con piccoli produttori.
+                    Qui le radici siciliane incontrano l'energia dei Navigli. La nostra filosofia è semplice ma intransigente: <strong>piccoli produttori, storie vere, zero mode passeggere.</strong> 
                 </p>
-                <p class="font-crimson text-xl text-primary italic pt-4">- Pietro Angelo Giuffrida, Fondatore</p>
+                <p class="font-poppins text-gray-600 leading-relaxed">
+                    Siamo un punto di riferimento per chi cerca vini artigianali, spesso da vitigni autoctoni dimenticati, accompagnati da una cucina che parla la lingua della tradizione: caponata, pane cunzato, salumi scelti col cuore.
+                </p>
+                <blockquote class="font-crimson text-2xl text-primary italic pt-4 border-l-4 border-secondary pl-6">
+                    "Il vino deve raccontare la terra, non l'industria."
+                </blockquote>
             </div>
         </div>
+    </div>
+
+    <!-- Foto Gallery Strip -->
+    <div class="grid grid-cols-3 h-64 overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1528823872057-9c0182707c01?q=80&w=800" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+        <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=800" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+        <img src="https://images.unsplash.com/photo-1543007630-9710e4a00a20?q=80&w=800" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
     </div>
 
     <script src="js/main.js"></script>
