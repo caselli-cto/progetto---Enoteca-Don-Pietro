@@ -18,7 +18,7 @@ var WINES = [
         type: "Naturale",
         price: 45,
         description: "Macerato sulle bucce, non filtrato. Un'espressione arcaica e potente del Grillo.",
-        image: "https://images.unsplash.com/photo-1572569664567-4e636b0cb680?auto=format&fit=crop&q=80&w=800"
+        image: "https://plus.unsplash.com/premium_photo-1753322853685-70ab5ccbc76a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
         id: 3,
@@ -28,7 +28,7 @@ var WINES = [
         type: "Spumante",
         price: 42,
         description: "Partner storico. Metodo Classico da Bombino Bianco. Bollicina cremosa e strutturata.",
-        image: "https://images.unsplash.com/photo-1598155523122-38423ae4d6c6?auto=format&fit=crop&q=80&w=800"
+        image: "https://images.unsplash.com/photo-1619143840338-98685ced6310?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
         id: 4,
