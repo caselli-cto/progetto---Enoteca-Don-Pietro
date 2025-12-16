@@ -58,7 +58,7 @@ var WINES = [
         type: "Rosso",
         price: 65,
         description: "Un classico intramontabile per le grandi occasioni. Potente e longevo.",
-        image: "https://images.unsplash.com/photo-1474722883778-792e7992b306?auto=format&fit=crop&q=80&w=800"
+        image: "https://plus.unsplash.com/premium_photo-1677434158244-ef5aebc03951?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
         id: 7,
@@ -88,7 +88,7 @@ var WINES = [
         type: "Spumante",
         price: 28,
         description: "Il vero Prosecco della tradizione contadina, rifermentato in bottiglia. Secco e beverino.",
-        image: "https://images.unsplash.com/photo-1594142404563-64dd22d05f33?auto=format&fit=crop&q=80&w=800"
+        image: "https://plus.unsplash.com/premium_photo-1661344235865-7d203ccabebd?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
 ];
 
