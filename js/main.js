@@ -8,7 +8,7 @@ var WINES = [
         type: "Rosso",
         price: 38,
         description: "Nerello Mascalese in purezza. Elegante, minerale, figlio del vulcano.",
-        image: "https://images.unsplash.com/photo-1559563362-c667ba5f5480?auto=format&fit=crop&q=80&w=800"
+        image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=800"
     },
     {
         id: 2,
@@ -18,7 +18,7 @@ var WINES = [
         type: "Naturale",
         price: 45,
         description: "Macerato sulle bucce, non filtrato. Un'espressione arcaica e potente del Grillo.",
-        image: "https://images.unsplash.com/photo-1474722883778-792e7992b306?auto=format&fit=crop&q=80&w=800"
+        image: "https://images.unsplash.com/photo-1572569664567-4e636b0cb680?auto=format&fit=crop&q=80&w=800"
     },
     {
         id: 3,
@@ -38,7 +38,7 @@ var WINES = [
         type: "Rosso",
         price: 35,
         description: "Biologico, affinato in anfora. Note di ciliegia, terra rossa e spezie mediterranee.",
-        image: "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&q=80&w=800"
+        image: "https://images.unsplash.com/photo-1559563362-c667ba5f5480?auto=format&fit=crop&q=80&w=800"
     },
     {
         id: 5,
@@ -58,7 +58,7 @@ var WINES = [
         type: "Rosso",
         price: 65,
         description: "Un classico intramontabile per le grandi occasioni. Potente e longevo.",
-        image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=800"
+        image: "https://images.unsplash.com/photo-1474722883778-792e7992b306?auto=format&fit=crop&q=80&w=800"
     },
     {
         id: 7,
@@ -78,7 +78,7 @@ var WINES = [
         type: "Naturale",
         price: 95,
         description: "Un'icona del vino naturale. Fermentato in anfore georgiane interrate.",
-        image: "https://images.unsplash.com/photo-1566914565749-9f796c9f6580?auto=format&fit=crop&q=80&w=800"
+        image: "https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?auto=format&fit=crop&q=80&w=800"
     },
     {
         id: 9,
@@ -355,6 +355,51 @@ function renderMenu() {
 
         section.innerHTML = title + list;
         container.appendChild(section);
+    });
+}
+
+// LOGICA EVENTI (Aggiunta mancante)
+function renderEvents() {
+    var container = document.getElementById('events-container');
+    if(!container) return;
+
+    EVENTS.forEach(function(evt) {
+        var card = document.createElement('div');
+        card.className = 'flex flex-col md:flex-row bg-white rounded-sm shadow-sm overflow-hidden border border-gray-100 group hover:shadow-lg transition-all';
+        
+        var html = '';
+        html += '<div class="md:w-1/3 h-64 md:h-auto overflow-hidden relative">';
+        html += '<img src="' + evt.image + '" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">';
+        html += '<div class="absolute top-4 left-4 bg-accent text-white font-bold font-poppins text-xs px-3 py-1 uppercase tracking-widest">' + evt.date + '</div>';
+        html += '</div>';
+
+        html += '<div class="md:w-2/3 p-8 flex flex-col justify-center">';
+        html += '<h3 class="font-playfair text-3xl text-primary mb-4">' + evt.title + '</h3>';
+        html += '<p class="font-poppins text-gray-600 leading-relaxed">' + evt.desc + '</p>';
+        html += '<div class="mt-6 pt-6 border-t border-gray-100 flex items-center gap-2">';
+        html += '<i data-lucide="music" class="w-5 h-5 text-secondary"></i>';
+        html += '<span class="text-xs font-bold uppercase tracking-widest text-gray-400">Ingresso Libero</span>';
+        html += '</div></div>';
+
+        card.innerHTML = html;
+        container.appendChild(card);
+    });
+}
+
+// LOGICA FAQ (Aggiunta mancante)
+function renderFAQ() {
+    var container = document.getElementById('faq-container');
+    if(!container) return;
+
+    FAQ.forEach(function(item) {
+        var div = document.createElement('div');
+        div.className = 'border-b border-gray-200 pb-4';
+        
+        var html = '<h4 class="font-playfair text-lg text-primary mb-2">' + item.q + '</h4>';
+        html += '<p class="font-poppins text-sm text-gray-500 leading-relaxed">' + item.a + '</p>';
+        
+        div.innerHTML = html;
+        container.appendChild(div);
     });
 }
 
